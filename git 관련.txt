@@ -1,0 +1,32 @@
+git
+
+git config --global user.name mjy102097 : 프로필 등록
+git config --global user.email 1020mjy@naver.com : 이메일 등록
+
+git init : 새로운 저장소 생성
+
+git status : 파일 상태 확인
+
+git add 사용자정보.txt / .(전체) : 커밋에 파일의 변경사항 (전체)포함
+
+git commit -m"사용자 정보 추가" : 커밋 생성
+
+git log : 현재 위치한 브랜치 커밋 내용 확인 및 식별자 부여됨
+
+git checkout 4fb859 : 4fb859 시점으로 변경 -> 4fb859는 git log에 나오는 노란색글자 commit 뒤 6자리
+드래그 하고 쉬프트 + 인설트 : 복사됨
+
+다시
+git checkout 69f3d8 : 69f3d8 시점으로 돌아감
+
+sourcetree 툴(구글 검색 - 홈페이지에서 다운)
+- 깃 저장소 확인을 위해 사용
+건너뛰기 - Mercurial 체크 해제 - 다음 - 다음 - 아니오
+Add 눌러서 저장소 git 폴더 지정
+더블클릭으로 HEAD 넘길수 있음 -> checkout 이랑 동일
+
+git hub에 올리기
+git remote add origin https://github.com/mjy102097/git_study.git : 클라우드 주소 등록 및 발행
+git push -u origin main : 커밋을 원격 서버에 업로드
+이후에는
+git push만 쳐도 git hub에 추가됨
